@@ -1,0 +1,11 @@
+This is a tutorial for using self-compiled builds of the PolarSSL-library for iOS. 
+PolarSSL is a light-weight open source cryptographic and SSL/TLS library written in C.
+You can build apps with XCode and the official SDK from Apple with this. 
+I also made a small example-app for using the libraries with XCode and the iPhone/iPhone-Simulator. 
+You can also download the precompiled PolarSSL-library (0.14.3).
+
+@see: http://www.x2on.de/2011/04/08/polarssl-for-ios-iphone-ipad-and-ipod-touch/
+
+Enjoy PolarSSL on the iPhone!
+
+I have made an iOS 4.3 XCode Project with PolarSSL 0.14.3 Library. The examples uses the MD5-algorithm to calculate an md5 from an UITextfield.

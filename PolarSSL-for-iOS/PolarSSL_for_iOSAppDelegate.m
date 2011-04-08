@@ -2,16 +2,56 @@
 //  PolarSSL_for_iOSAppDelegate.m
 //  PolarSSL-for-iOS
 //
-//  Created by x2on on 08.04.11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Felix Schulze on 08.04.11.
+//  Copyright 2011 Felix Schulze. All rights reserved.
 //
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+//
+//  http://www.apache.org/licenses/LICENSE-2.0
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
 
 #import "PolarSSL_for_iOSAppDelegate.h"
+#include "polarssl/md5.h"
 
 @implementation PolarSSL_for_iOSAppDelegate
 
 
-@synthesize window=_window;
+@synthesize window, textField, md5TextField;
+
+#pragma mark -
+#pragma mark PolarSSL
+
+- (IBAction)calculateMD5:(id)sender
+{
+	/** Calculate MD5*/
+	NSString *string =  textField.text;
+    const char *inStr = [string UTF8String];
+    unsigned long lngth = [string length];
+	unsigned char result[16];
+    
+    md5( (unsigned char *) inStr, lngth, result );
+    
+    NSMutableString *outStrg = [[NSMutableString alloc] init];
+    
+    for(int i = 0; i < 16; i++ )
+    {
+        [outStrg appendFormat:@"%02x", result[i]];
+    }
+    
+	md5TextField.text = outStrg;
+    [outStrg release];
+	
+	//Hide Keyboard after calculation
+	[textField resignFirstResponder];
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -59,9 +99,21 @@
      */
 }
 
+- (IBAction)showInfo {
+	
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"GnuTLS-for-iOS" message:@"PolarSSL-Version: 0.14.3\n\nLicense: See include/polarssl/LICENSE\n\nCopyright 2011 by Felix Schulze\n http://www.x2on.de" delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:nil];
+	
+	[alert show];
+	[alert release];
+}
+
+
 - (void)dealloc
 {
-    [_window release];
+    [window release];
+    [textField release];
+    [md5TextField release];
+
     [super dealloc];
 }
 

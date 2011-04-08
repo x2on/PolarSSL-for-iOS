@@ -14,20 +14,26 @@
 		2A263A51134EEADD000C7B7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A263A50134EEADD000C7B7A /* main.m */; };
 		2A263A54134EEADD000C7B7A /* PolarSSL_for_iOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A263A53134EEADD000C7B7A /* PolarSSL_for_iOSAppDelegate.m */; };
 		2A263A57134EEADD000C7B7A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A263A55134EEADD000C7B7A /* MainWindow.xib */; };
+		2A263A5E134EEB16000C7B7A /* libpolarssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A263A5D134EEB16000C7B7A /* libpolarssl.a */; };
+		2A263A6E134F1638000C7B7A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A263A6D134F1638000C7B7A /* Icon.png */; };
+		2A263A70134F1643000C7B7A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A263A6F134F1643000C7B7A /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A263A3F134EEADD000C7B7A /* PolarSSL-for-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PolarSSL-for-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A263A3F134EEADD000C7B7A /* PolarSSL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PolarSSL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A263A43134EEADD000C7B7A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2A263A45134EEADD000C7B7A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2A263A47134EEADD000C7B7A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2A263A4B134EEADD000C7B7A /* PolarSSL-for-iOS-Info.plist */ = {isa = PBXFileReference; path = "PolarSSL-for-iOS-Info.plist"; sourceTree = "<group>"; };
+		2A263A4B134EEADD000C7B7A /* PolarSSL-for-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PolarSSL-for-iOS-Info.plist"; sourceTree = "<group>"; };
 		2A263A4D134EEADD000C7B7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2A263A4F134EEADD000C7B7A /* PolarSSL-for-iOS-Prefix.pch */ = {isa = PBXFileReference; path = "PolarSSL-for-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		2A263A4F134EEADD000C7B7A /* PolarSSL-for-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PolarSSL-for-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		2A263A50134EEADD000C7B7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2A263A52134EEADD000C7B7A /* PolarSSL_for_iOSAppDelegate.h */ = {isa = PBXFileReference; path = PolarSSL_for_iOSAppDelegate.h; sourceTree = "<group>"; };
+		2A263A52134EEADD000C7B7A /* PolarSSL_for_iOSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PolarSSL_for_iOSAppDelegate.h; sourceTree = "<group>"; };
 		2A263A53134EEADD000C7B7A /* PolarSSL_for_iOSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PolarSSL_for_iOSAppDelegate.m; sourceTree = "<group>"; };
 		2A263A56134EEADD000C7B7A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		2A263A5D134EEB16000C7B7A /* libpolarssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpolarssl.a; path = lib/libpolarssl.a; sourceTree = "<group>"; };
+		2A263A6D134F1638000C7B7A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		2A263A6F134F1643000C7B7A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,7 @@
 				2A263A44134EEADD000C7B7A /* UIKit.framework in Frameworks */,
 				2A263A46134EEADD000C7B7A /* Foundation.framework in Frameworks */,
 				2A263A48134EEADD000C7B7A /* CoreGraphics.framework in Frameworks */,
+				2A263A5E134EEB16000C7B7A /* libpolarssl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +63,7 @@
 		2A263A40134EEADD000C7B7A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2A263A3F134EEADD000C7B7A /* PolarSSL-for-iOS.app */,
+				2A263A3F134EEADD000C7B7A /* PolarSSL.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +71,7 @@
 		2A263A42134EEADD000C7B7A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A263A5D134EEB16000C7B7A /* libpolarssl.a */,
 				2A263A43134EEADD000C7B7A /* UIKit.framework */,
 				2A263A45134EEADD000C7B7A /* Foundation.framework */,
 				2A263A47134EEADD000C7B7A /* CoreGraphics.framework */,
@@ -85,6 +93,8 @@
 		2A263A4A134EEADD000C7B7A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2A263A6F134F1643000C7B7A /* Icon@2x.png */,
+				2A263A6D134F1638000C7B7A /* Icon.png */,
 				2A263A4B134EEADD000C7B7A /* PolarSSL-for-iOS-Info.plist */,
 				2A263A4C134EEADD000C7B7A /* InfoPlist.strings */,
 				2A263A4F134EEADD000C7B7A /* PolarSSL-for-iOS-Prefix.pch */,
@@ -110,7 +120,7 @@
 			);
 			name = "PolarSSL-for-iOS";
 			productName = "PolarSSL-for-iOS";
-			productReference = 2A263A3F134EEADD000C7B7A /* PolarSSL-for-iOS.app */;
+			productReference = 2A263A3F134EEADD000C7B7A /* PolarSSL.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -142,6 +152,8 @@
 			files = (
 				2A263A4E134EEADD000C7B7A /* InfoPlist.strings in Resources */,
 				2A263A57134EEADD000C7B7A /* MainWindow.xib in Resources */,
+				2A263A6E134F1638000C7B7A /* Icon.png in Resources */,
+				2A263A70134F1643000C7B7A /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +231,14 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PolarSSL-for-iOS/PolarSSL-for-iOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = include;
 				INFOPLIST_FILE = "PolarSSL-for-iOS/PolarSSL-for-iOS-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib\"",
+				);
+				PRODUCT_NAME = PolarSSL;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -232,8 +250,14 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PolarSSL-for-iOS/PolarSSL-for-iOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = include;
 				INFOPLIST_FILE = "PolarSSL-for-iOS/PolarSSL-for-iOS-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib\"",
+				);
+				PRODUCT_NAME = PolarSSL;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
