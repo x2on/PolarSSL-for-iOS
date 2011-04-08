@@ -15,8 +15,8 @@
 		2A263A54134EEADD000C7B7A /* PolarSSL_for_iOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A263A53134EEADD000C7B7A /* PolarSSL_for_iOSAppDelegate.m */; };
 		2A263A57134EEADD000C7B7A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A263A55134EEADD000C7B7A /* MainWindow.xib */; };
 		2A263A5E134EEB16000C7B7A /* libpolarssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A263A5D134EEB16000C7B7A /* libpolarssl.a */; };
-		2A263A6E134F1638000C7B7A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A263A6D134F1638000C7B7A /* Icon.png */; };
-		2A263A70134F1643000C7B7A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A263A6F134F1643000C7B7A /* Icon@2x.png */; };
+		2A352AF2134F1A0A00220ED2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A352AF0134F1A0A00220ED2 /* Icon.png */; };
+		2A352AF3134F1A0A00220ED2 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A352AF1134F1A0A00220ED2 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,8 @@
 		2A263A53134EEADD000C7B7A /* PolarSSL_for_iOSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PolarSSL_for_iOSAppDelegate.m; sourceTree = "<group>"; };
 		2A263A56134EEADD000C7B7A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		2A263A5D134EEB16000C7B7A /* libpolarssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpolarssl.a; path = lib/libpolarssl.a; sourceTree = "<group>"; };
-		2A263A6D134F1638000C7B7A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
-		2A263A6F134F1643000C7B7A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		2A352AF0134F1A0A00220ED2 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		2A352AF1134F1A0A00220ED2 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +93,8 @@
 		2A263A4A134EEADD000C7B7A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2A263A6F134F1643000C7B7A /* Icon@2x.png */,
-				2A263A6D134F1638000C7B7A /* Icon.png */,
+				2A352AF0134F1A0A00220ED2 /* Icon.png */,
+				2A352AF1134F1A0A00220ED2 /* Icon@2x.png */,
 				2A263A4B134EEADD000C7B7A /* PolarSSL-for-iOS-Info.plist */,
 				2A263A4C134EEADD000C7B7A /* InfoPlist.strings */,
 				2A263A4F134EEADD000C7B7A /* PolarSSL-for-iOS-Prefix.pch */,
@@ -152,8 +152,8 @@
 			files = (
 				2A263A4E134EEADD000C7B7A /* InfoPlist.strings in Resources */,
 				2A263A57134EEADD000C7B7A /* MainWindow.xib in Resources */,
-				2A263A6E134F1638000C7B7A /* Icon.png in Resources */,
-				2A263A70134F1643000C7B7A /* Icon@2x.png in Resources */,
+				2A352AF2134F1A0A00220ED2 /* Icon.png in Resources */,
+				2A352AF3134F1A0A00220ED2 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +282,7 @@
 				2A263A5C134EEADD000C7B7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
